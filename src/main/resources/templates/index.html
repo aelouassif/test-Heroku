@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <script src="jquery-3.2.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body{
+      background-color: #eee;
+      padding: 50px;
+    }
+
+    .tab-content{
+      display: none;
+    }
+    .tabs .active a{
+      color:red;
+    }
+    .tab-content.active{
+      display: block;
+
+    }
+    li{
+      color: blue;
+      display: block;
+      float:left;
+    }
+  </style>
+</head>
+<body>
+<div ng-app="app">
+  <div ng-controller="BillCtrl">
+    <form action="db" method="get">
+      <input id="uname" type="text" name="uname" value="" class="form-control" placeholder="userName"> <br>
+      <input id="pass" type="password" name="pass" value="" class="form-control" placeholder="password">
+
+      <br>
+      <button id="submitForm" class="form-control"> OK </button>
+
+
+    </form>
+  </div>
+</div>
+
+<script src="cours.js" charset="utf-8"></script>
+</body>
+</html>

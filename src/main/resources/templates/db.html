@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'db')}">
+
+<body>
+
+
+<div >
+  <h1> Liste de tous les Users </h1>
+  <ul th:each="record : ${unames} ">
+    <li th:text="${record}"/>
+  </ul>
+</div>
+
+</body>
+</html>
